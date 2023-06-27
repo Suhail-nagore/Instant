@@ -849,6 +849,8 @@ section {
 
 .services .icon-box .icon {
   margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .services .icon-box .icon i {
@@ -868,6 +870,11 @@ section {
   transition: ease-in-out 0.3s;
 }
 
+.what-head{
+  color: #37517e;
+  transition: ease-in-out 0.3s;
+}
+
 .services .icon-box p {
   line-height: 24px;
   font-size: 14px;
@@ -878,7 +885,7 @@ section {
   transform: translateY(-10px);
 }
 
-.services .icon-box:hover h4 a {
+.services .icon-box:hover .what-head {
   color: #47b2e4;
 }
 
@@ -886,7 +893,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("../img/cta-bg.jpg") fixed center center;
+  background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("../img/hard-bg.jpg") fixed center center;
   background-size: cover;
   padding: 120px 0;
 }
