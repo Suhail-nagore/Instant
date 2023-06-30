@@ -1761,7 +1761,7 @@ section {
   padding-top: 0;
 }
 
-#footer .footer-top .footer-links ul a {
+#footer .footer-top .footer-links  ul a {
   color: #777777;
   transition: 0.3s;
   display: inline-block;
