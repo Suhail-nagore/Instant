@@ -254,6 +254,52 @@
     </section>
     <!-- End About Us Section -->
 
+    <!-- <section id="cta" class="cta1">
+      <div class="container" data-aos="zoom-in">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+
+            <div class="cta-bg">
+              <div class="container text-center text-lg-start">
+                <h3 style="text-align: center;">What Our Customers Say</h3>
+              </div>
+
+              <div class="row">
+
+                <div class="col-lg-4 col-md-12 mb-4">
+                  <iframe style="border-radius: 15px;" width="100%" height="315"
+                    src="https://www.youtube.com/embed/VIDEO_ID_1" title="YouTube video player" frameborder="0"
+                    allowfullscreen></iframe>
+                </div>
+
+                <div class="col-lg-4 col-md-12 mb-4">
+                  <iframe style="border-radius: 15px;" width="100%" height="315"
+                    src="https://www.youtube.com/embed/VIDEO_ID_2" title="YouTube video player" frameborder="0"
+                    allowfullscreen></iframe>
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+                  <iframe style="border-radius: 15px;" width="100%" height="315"
+                    src="https://www.youtube.com/embed/VIDEO_ID_3" title="YouTube video player" frameborder="0"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+
+
+
+
+
+
+
+
+
+
     <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="why-us section-bg">
       <div class="container-fluid" data-aos="fade-up">
@@ -1106,7 +1152,7 @@
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>Agarwal Complex, Near Gurhatti chowk Moradabad UP, 244001</p>
+                <p>Surya Nagar, Behind Krishna Public School Linepaar Moradabad UP, 244001</p>
               </div>
 
               <div class="email">
@@ -1130,28 +1176,37 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="#" method="post" role="form" class="php-email-form">
+            <form action="processform.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
                   <input type="text" name="name" class="form-control" id="name" required />
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
+                  <label for="email">Your Email</label>
                   <input type="email" class="form-control" name="email" id="email" required />
                 </div>
               </div>
               <div class="form-group">
-                <label for="name">Phone No.</label>
-                <input type="tel" class="form-control" name="Phone" id="subject" required />
+                <label for="phone">Phone No.</label>
+                <input type="tel" class="form-control" name="phone" id="phone" required />
               </div>
               <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required />
+                <label for="service">Select a Device</label>
+                <select class="form-control" name="service" id="service" required>
+                  <option value="" disabled selected>Select a Device</option>
+                  <option value="Hard-Drive">Hard-Drive</option>
+                  <option value="Pen Drive">Pen Drive</option>
+                  <option value="SSD">SSD</option>
+                  <option value="Memory-card">Memory-card</option>
+                  <option value="Other Memory Devices">Other Memory Devices</option>
+                  <!-- <option value="service3">SSD</option> -->
+                  <!-- Add more options as needed -->
+                </select>
               </div>
               <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
+                <label for="message">Message</label>
+                <textarea class="form-control" name="message" rows="10" id="message" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
@@ -1164,6 +1219,7 @@
                 <button type="submit">Send Message</button>
               </div>
             </form>
+
           </div>
         </div>
       </div>
@@ -1232,7 +1288,7 @@
             <h4>Our Services</h4>
             <ul>
               <li>
-                <i class="bx bx-chevron-right"></i> 
+                <i class="bx bx-chevron-right"></i>
                 Desktop/Laptop HDD Data Recovery
                 <!-- <a href="#">Web Design</a> -->
               </li>
@@ -1247,7 +1303,7 @@
                 Memory Card Data Recovery
               </li>
               <li>
-                <i class="bx bx-chevron-right"></i> 
+                <i class="bx bx-chevron-right"></i>
                 <!-- <a href="#">Marketing</a> -->
                 Pen Drive Data Recovery
               </li>
@@ -1262,7 +1318,8 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Social Networks</h4>
             <p>
-              We are commited to provide the best services to out customers. Check and follow us on social media for more updates.
+              We are commited to provide the best services to out customers. Check and follow us on social media for
+              more updates.
             </p>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
