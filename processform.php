@@ -17,10 +17,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validate and sanitize the form data (perform necessary checks)
 
     // Database Configuration
-    $servername = "your_database_host";
-    $username = "your_database_username";
-    $password = "your_database_password";
-    $dbname = "your_database_name";
+    $servername = "localhost";
+    $username = "gozoomte_instantform";
+    $password = "Instant@2231";
+    $dbname = "gozoomte_instant";
 
     // Create a new PDO instance
     try {
@@ -54,19 +54,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         // Server settings
         $mail->isSMTP();
-        $mail->Host = 'your_smtp_host';
+        $mail->Host = 'mail.gozoomtech.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'your_smtp_username';
-        $mail->Password = 'your_smtp_password';
+        $mail->Username = 'info@instantdatarecovery.com';
+        $mail->Password = 'Instant@2231';
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
 
         // Recipients
-        $mail->setFrom('info@yourdomain.com', 'Your Name');
-        $mail->addAddress('info@yourdomain.com');
+        $mail->setFrom($email, $name);
+        $mail->addAddress('info@instantdatarecovery.com');
 
         // Email content
-        $mail->isHTML(true);
+        $mail->isHTML(false);
         $mail->Subject = 'Form Submission';
         $mail->Body = "Name: $name<br>"
             . "Email: $email<br>"
