@@ -68,11 +68,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Email content
         $mail->isHTML(false);
         $mail->Subject = 'Form Submission';
-        $mail->Body = "Name: $name<br>"
-            . "Email: $email<br>"
-            . "Contact Number: $contactNumber<br>"
-            . "Service: $service<br>" // Include the service in the email
-            . "Message: $message<br>";
+        $mail->Body = "Name: $name\n"
+            . "Email: $email\n"
+            . "Contact Number: $contactNumber\n"
+            . "Service: $service\n" // Include the service in the email
+            . "Message: $message\n";
 
         // Send the email
         $mail->send();
