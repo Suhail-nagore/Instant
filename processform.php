@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Prepare and execute the database query
     try {
-        $stmt = $conn->prepare("INSERT INTO Property_enquiry (name, email, contact_number, message, service) VALUES (:name, :email, :contactNumber, :message, :service)");
+        $stmt = $conn->prepare("INSERT INTO customer_feedback (name, email, contactNumber, service, message) VALUES (:name, :email, :contactNumber, :service, :message)");
         $stmt->bindParam(':name', $name);
         $stmt->bindParam(':email', $email);
         $stmt->bindParam(':contactNumber', $contactNumber);
